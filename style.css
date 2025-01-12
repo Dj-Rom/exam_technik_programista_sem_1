@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    width: 90vw;
+    background-color: rgb(85, 88, 90);
+
+    button {
+        cursor: pointer;
+    }
+}
+
+
+h2 {
+    color: white;
+}
+
+.main_form_zdarzenia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    background-color: orange;
+    min-width: 200px;
+    border-radius: 3px;
+
+    .input_style {
+        width: 30vw;
+        min-width: 200px;
+        max-width: 500px;
+        height: 4vh;
+        min-height: 30px;
+        max-height: 100px;
+        border-radius: .5rem;
+        margin-top: 1px;
+    }
+
+    .input_style::placeholder {
+        color: black;
+
+    }
+
+    .main_form_btn {
+        margin: 13px auto;
+        min-width: 50px;
+        max-width: 600px;
+        height: 4vh;
+        min-height: 30px;
+        max-height: 100px;
+        border-radius: .5rem;
+
+    }
+
+}
+
+.main_licznik {
+    width: 60vw;
+    min-width: 200px;
+    border-radius: 3px;
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+}
+
+.main_filter_date {
+    width: 60vw;
+    min-width: 200px;
+    border-radius: 3px;
+    margin-top: 15px;
+    background-color: rgb(55, 52, 218);
+    color: white;
+}
+
+.main_table {
+    width: 60vw;
+    min-width: 200px;
+    border-radius: 3px;
+    margin-top: 15px;
+    background-color: rgb(72, 255, 0);
+
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Panel Zarządzania Zdarzeniami</title>
+  </head>
+  <body>
+    <main>
+      <h2>Tablica zdarzeneń</h2>
+      <form class="main_form_zdarzenia" action="#" method="get">
+        <label for="nazweZdarzenia">Nazwe zdarzenia:</label
+        ><input
+          minlength="2"
+          type="text"
+          name="nazweZdarzenia"
+          id="nazweZdarzenia"
+          placeholder="wpisz tutaj nazwe zdarzenia:"
+          class="input_style"
+        />
+        <label for="dataZdarzenia">Data zdarzenia:</label
+        ><input
+          type="date"
+          name="dataZdarzenia"
+          id="dataZdarzenia"
+          class="input_style"
+        />
+        <label for="poleTextowe">Opis:</label
+        ><textarea name="poleTextowe" id="poleTextowe" class="input_style">
+pole textowe</textarea
+        >
+        <span class="error_span_form"></span>
+        <button type="submit" class="main_form_btn">wyszły</button>
+      </form>
+      <section class="main_licznik">
+        <h4>Licznik:</h4>
+        <span class="main_licznik_span">0</span>
+      </section>
+      <section class="main_filter_date">
+        <h4>Filter:</h4>
+        <label for="main_filter_date">wyberz datę</label>
+        <input
+          type="date"
+          name="main_filter_date"
+          class="main_filter_date_input"
+          title="wyberz datę"
+        />
+        <span class="error_span_filter"></span>
+      </section>
+      <table class="main_table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nazwę</th>
+            <th>Datę</th>
+            <th>Opis</th>
+            <th>Usuń</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
