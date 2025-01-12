@@ -94,5 +94,4 @@ function functionFilter(e) {
   document.querySelector('.error_span_filter').innerHTML = newls.length
     ? ''
     : 'brak, tej daty';
-  return filter.removeEventListener('change', functionFilter);
 }
